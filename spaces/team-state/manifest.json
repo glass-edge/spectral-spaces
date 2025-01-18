@@ -1,0 +1,6 @@
+{
+  "uid": "c000a4f6-e7b6-4bba-a434-b7d926713ad9",
+  "name": "Team State",
+  "description": "Team State Board",
+  "entryPoint": "dist/content.html"
+}

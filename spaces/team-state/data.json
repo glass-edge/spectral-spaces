@@ -1,0 +1,77 @@
+{
+  "$binding:team": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "providers": {
+      "preview": {
+        "file": {
+          "path": "preview/team.json"
+        }
+      }
+    }
+  },
+  "$binding:issues": {
+    "schema": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "providers": {
+      "jira": {
+        "request": {
+          "url": "/rest/api/2/search/jql",
+          "method": "get",
+          "params": {
+            "fields": "summary,issuetype,priority,status,created,updated,duedate,description,assignee,reporter,issuelinks,labels",
+            "expand": "changelog"
+          }
+        },
+        "transforms": [
+          {
+            "jsonata": "[issues.{'key':key,'summary':fields.summary,'type':{'name':fields.issuetype.name,'id':fields.issuetype.id},'priority':{'name':fields.priority.name,'id':fields.priority.id},'status':{'name':fields.status.name,'id':fields.status.id},'created':fields.created,'updated':fields.updated,'duedate':fields.duedate,'assignee':{'name':fields.assignee.displayName,'email':fields.assignee.emailAddress},'reporter':{'name':fields.reporter.displayName,'email':fields.reporter.emailAddress},'links':[fields.issuelinks.{'link':type.{'name':name,'inward':inward,'outward':outward},'inwardIssue':inwardIssue.{'key':key,'summary':fields.summary,'status':{'name':fields.status.name,'id':fields.status.id},'type':{'name':fields.issuetype.name,'id':fields.issuetype.id},'priority':{'name':fields.priority.name,'id':fields.priority.id}},'outwardIssue':outwardIssue.{'key':key,'summary':fields.summary,'status':{'name':fields.status.name,'id':fields.status.id},'type':{'name':fields.issuetype.name,'id':fields.issuetype.id},'priority':{'name':fields.priority.name,'id':fields.priority.id}}}],'labels':fields.labels,'changelog':changelog.{'histories':[histories.{'id':id,'author':author.{'name':displayName,'email':emailAddress},'created':created,'items':items}]}}]"
+          },
+          {
+            "jsonata": "$~>|changelog.histories|{'change':items[field='status' or field='assignee'][0]{'field':field,'from':fromString,'to':toString}},'items'|~>|changelog|{'status':$sort([histories[change.field='status']],function($a,$b){$a.created>$b.created}),'assignee':$sort([histories[change.field='assignee']],function($a,$b){$a.created>$b.created})},'histories'|"
+          }
+        ]
+      },
+      "preview": {
+        "file": {
+          "path": "preview/issues.json"
+        }
+      }
+    }
+  }
+}

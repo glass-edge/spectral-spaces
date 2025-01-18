@@ -1,0 +1,60 @@
+{
+  "name": "Team Awesome",
+  "members": [
+    {
+      "name": "Alice Doe",
+      "email": "alice.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Bob Doe",
+      "email": "bob.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Charlie Doe",
+      "email": "charlie.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "David Doe",
+      "email": "david.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Eve Doe",
+      "email": "eve.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Frank Doe",
+      "email": "frank.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Grace Doe",
+      "email": "grace.doe@company.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Hank Smith",
+      "email": "hank.smith@company.com",
+      "role": "Product Owner"
+    },
+    {
+      "name": "Ivy Smith",
+      "email": "ivy.smith@company.com",
+      "role": "Scrum Master"
+    },
+    {
+      "name": "Jack Smith",
+      "email": "jack.smith@company.com",
+      "role": "Quality Assurance"
+    },
+    {
+      "name": "Kelly Smith",
+      "email": "kelly.smith@company.com",
+      "role": "UX Designer"
+    }
+  ]
+}

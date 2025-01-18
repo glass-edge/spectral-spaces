@@ -1,0 +1,544 @@
+[
+  {
+    "key": "ISSUE-1",
+    "summary": "Implement Blue Theme",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "Done", "id": "4" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Alice Doe", "email": "alice.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Alice Doe", "email": "john.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Alice Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Alice Doe", "email": "john.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "Alice Doe", "email": "john.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        },
+        {
+          "author": { "name": "Alice Doe", "email": "john.doe@company.com" },
+          "created": "2024-12-02T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Review", "to": "Done" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-2",
+    "summary": "Develop Red Feature",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "Medium", "id": "2" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Bob Doe", "email": "bob.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Bob Doe", "email": "bob.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Bob Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Bob Doe", "email": "bob.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-3",
+    "summary": "Implement Green Theme",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "Done", "id": "4" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Charlie Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        },
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-12-02T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Review", "to": "Done" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-4",
+    "summary": "Provide Basic Architecture",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Charlie Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Charlie Doe", "email": "charlie.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-5",
+    "summary": "Create Subsystem Connectivity",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Review", "id": "3" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "David Doe", "email": "david.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "David Doe", "email": "david.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "David Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "David Doe", "email": "david.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "David Doe", "email": "david.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-6",
+    "summary": "Develop Subsystem Interface",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "To Do", "id": "1" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "David Doe", "email": "david.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "David Doe", "email": "david.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "David Doe" }
+        }
+      ],
+      "status": []
+    }
+  },
+  {
+    "key": "ISSUE-7",
+    "summary": "Develop Flexibility Support",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Eve Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-8",
+    "summary": "Develop Scalability Support",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Eve Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-9",
+    "summary": "Develop Security Support",
+    "type": { "name": "Story", "id": "1" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Review", "id": "3" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+    "reporter": { "name": "Hank Smith", "email": "hank.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Eve Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "Eve Doe", "email": "eve.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-10",
+    "summary": "Fix Bug 1",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Frank Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-11",
+    "summary": "Fix Bug 2",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Frank Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-12",
+    "summary": "Fix Bug 3",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "High", "id": "1" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Frank Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Frank Doe", "email": "frank.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-13",
+    "summary": "Fix Issue 1",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "Low", "id": "1" },
+    "status": { "name": "Done", "id": "4" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Grace Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        },
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-12-02T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Review", "to": "Done" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-14",
+    "summary": "Fix Issue 2",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "Medium", "id": "2" },
+    "status": { "name": "Done", "id": "4" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Grace Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        },
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-29T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Progress", "to": "In Review" }
+        },
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-12-02T00:00:00.000Z",
+          "change": { "field": "status", "from": "In Review", "to": "Done" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-15",
+    "summary": "Fix Issue 3",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "High", "id": "3" },
+    "status": { "name": "In Progress", "id": "2" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Grace Doe" }
+        }
+      ],
+      "status": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-20T00:00:00.000Z",
+          "change": { "field": "status", "from": "To Do", "to": "In Progress" }
+        }
+      ]
+    }
+  },
+  {
+    "key": "ISSUE-16",
+    "summary": "Fix Issue 4",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "Very High", "id": "4" },
+    "status": { "name": "To Do", "id": "1" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Grace Doe" }
+        }
+      ],
+      "status": []
+    }
+  },
+  {
+    "key": "ISSUE-17",
+    "summary": "Fix Issue 5",
+    "type": { "name": "Bug", "id": "2" },
+    "priority": { "name": "Showstopper", "id": "5" },
+    "status": { "name": "To Do", "id": "1" },
+    "created": "2024-10-18T00:00:00.000Z",
+    "updated": "2024-12-02T00:00:00.000Z",
+    "duedate": "2024-12-06T00:00:00.000Z",
+    "assignee": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+    "reporter": { "name": "Jack Smith", "email": "jack.smith@company.com" },
+    "links": [],
+    "labels": ["primary"],
+    "changelog": {
+      "assignee": [
+        {
+          "author": { "name": "Grace Doe", "email": "grace.doe@company.com" },
+          "created": "2024-11-18T00:00:00.000Z",
+          "change": { "field": "assignee", "from": null, "to": "Grace Doe" }
+        }
+      ],
+      "status": []
+    }
+  }
+]
