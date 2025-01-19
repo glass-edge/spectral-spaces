@@ -1,0 +1,27 @@
+{
+  "$binding:jobs": {
+    "schema": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "providers": {
+      "github": {
+        "request": {
+          "url": "/repos/{owner}/{repo}/actions/runs",
+          "method": "get",
+          "headers": {
+            "X-GitHub-Api-Version": "2022-11-28",
+            "Accept": "application/vnd.github+json"
+          }
+        }
+      },
+      "preview": {
+        "file": {
+          "path": "preview/jobs.json"
+        }
+      }
+    }
+  }
+}
