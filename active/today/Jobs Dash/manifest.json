@@ -1,6 +1,0 @@
-{
-  "uid": "11f5fa93-6a33-49aa-9b1d-9e8c502bea57",
-  "name": "Jobs Dash",
-  "description": "Jobs Dashboard",
-  "entryPoint": "dist/content.html"
-}
