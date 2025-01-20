@@ -38,16 +38,28 @@ function init (value: any) {
       : lastJob.conclusion === 'failure' ? 'status-fail'
       : 'status-in-progress'
 
+    const prevJob = jobs[jobs.length - 2]
+
     html += `
-      <div class="card m-2" style="width: 18rem;">
+      <div class="shadow card m-2" style="width: 18rem;">
         <div class="card-img-top status ${status}">
           <a href="${lastJob.url}">
             ${(lastJob.conclusion ?? lastJob.status)?.toUpperCase() ?? ''}
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">${repo}</h5>
-          <p class="card-text job-text">${lastJob.author}<br/>${lastJob.commit}</p>
+          <h5 class="card-title">&#9673; ${repo}</h5>
+          <p class="card-text author-text">${lastJob.author}</p>
+          <p class="card-text commit-text">${lastJob.commit}</p>
+    `
+    if (prevJob != null) {
+      html += `
+          <p class="card-text author-text">${prevJob.author}</p>
+          <p class="card-text commit-text">${prevJob.commit}</p>
+      `
+    }
+
+    html += `
         </div>
       </div>
     `

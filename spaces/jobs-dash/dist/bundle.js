@@ -38,16 +38,26 @@ function init(value) {
         const status = lastJob.conclusion === 'success' ? 'status-success'
             : lastJob.conclusion === 'failure' ? 'status-fail'
                 : 'status-in-progress';
+        const prevJob = jobs[jobs.length - 2];
         html += `
-      <div class="card m-2" style="width: 18rem;">
+      <div class="shadow card m-2" style="width: 18rem;">
         <div class="card-img-top status ${status}">
           <a href="${lastJob.url}">
             ${(_c = (_b = ((_a = lastJob.conclusion) !== null && _a !== void 0 ? _a : lastJob.status)) === null || _b === void 0 ? void 0 : _b.toUpperCase()) !== null && _c !== void 0 ? _c : ''}
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">${repo}</h5>
-          <p class="card-text job-text">${lastJob.author}<br/>${lastJob.commit}</p>
+          <h5 class="card-title">&#9673; ${repo}</h5>
+          <p class="card-text author-text">${lastJob.author}</p>
+          <p class="card-text commit-text">${lastJob.commit}</p>
+    `;
+        if (prevJob != null) {
+            html += `
+          <p class="card-text author-text">${prevJob.author}</p>
+          <p class="card-text commit-text">${prevJob.commit}</p>
+      `;
+        }
+        html += `
         </div>
       </div>
     `;
