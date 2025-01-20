@@ -11,3 +11,36 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.status-fail, .status-fail a {
+  color: #ff0000;
+  background-color: #ffcaca;
+  text-decoration: none !important;
+}
+
+.status-success, .status-success a {
+  color: #4bb64b;
+  background-color: #c9ffc9;
+  text-decoration: none !important;
+}
+
+.status-in-progress, .status-in-progress a {
+  color: #0000ff;
+  background-color: #c9c9ff;
+  text-decoration: none !important;
+}
+
+.job-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

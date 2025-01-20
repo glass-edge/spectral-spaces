@@ -3,7 +3,72 @@
     "schema": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string",
+            "description": "The repository name in the format {owner}/{repo}",
+            "examples": ["octocat/Hello-World"]
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the workflow",
+            "examples": ["Build"]
+          },
+          "event": {
+            "type": "string",
+            "description": "The event that triggered the workflow run",
+            "examples": ["push"]
+          },
+          "status": {
+            "type": ["string", "null"],
+            "description": "The status of the workflow run",
+            "examples": ["queued"]
+          },
+          "conclusion": {
+            "type": ["string", "null"],
+            "description": "The conclusion of the workflow run",
+            "examples": ["success"]
+          },
+          "number": {
+            "type": "integer",
+            "description": "The sequence number of the workflow run",
+            "examples": [37]
+          },
+          "created": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time the workflow run was created",
+            "examples": ["2020-01-22T19:33:08Z"]
+          },
+          "updated": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time the workflow run was last updated",
+            "examples": ["2020-01-22T19:33:08Z"]
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the workflow run",
+            "examples": ["Update README.md"]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "The HTML URL to the workflow run",
+            "examples": ["https://github.com/octo-org/octo-repo/actions/runs/30433642"]
+          },
+          "commit": {
+            "type": "string",
+            "description": "The commit message at the head of the branch",
+            "examples": ["Update README.md"]
+          },
+          "author": {
+            "type": "string",
+            "description": "The name of the author of the commit",
+            "examples": ["Octo Cat"]
+          }
+        }
       }
     },
     "providers": {
@@ -14,8 +79,16 @@
           "headers": {
             "X-GitHub-Api-Version": "2022-11-28",
             "Accept": "application/vnd.github+json"
+          },
+          "params": {
+            "per_page": 5
           }
-        }
+        },
+        "transforms": [
+          {
+            "jsonata": "[workflow_runs.{'repo':repository.full_name,'name':name,'event':event,'status':status,'conclusion':conclusion,'number':run_number,'created':created_at,'updated':updated_at,'title':display_title,'url':html_url,'commit':head_commit.message,'author':head_commit.author.name}]"
+          }
+        ]
       },
       "preview": {
         "file": {
